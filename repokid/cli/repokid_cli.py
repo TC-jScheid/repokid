@@ -208,7 +208,11 @@ def _get_aardvark_data(aardvark_api_location, account_number=None, arn=None):
         payload = {"arn": [arn]}
     else:
         return
+    i = 0
     while True:
+        #TODO: Seems to get trapped in while loop
+        i += 1
+        print('Loop num {}'.format(i))
         params = {"count": PAGE_SIZE, "page": page_num}
         try:
             r_aardvark = requests.post(
@@ -229,6 +233,7 @@ def _get_aardvark_data(aardvark_api_location, account_number=None, arn=None):
             response_data.pop("total")
             if PAGE_SIZE * page_num < r_aardvark.json().get("total"):
                 page_num += 1
+                print('Getting page {}'.format(page_num))
             else:
                 break
     return response_data
