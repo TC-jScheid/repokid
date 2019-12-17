@@ -204,9 +204,11 @@ def _get_aardvark_data(aardvark_api_location, account_number=None, arn=None):
 
     if account_number:
         payload = {"phrase": "{}".format(account_number)}
+        print('Sending payload {}'.format(payload))
     elif arn:
         payload = {"arn": [arn]}
     else:
+        print('Hit return statement')
         return
     i = 0
     while True:
