@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-
+docutils==0.15.2          # via botocore, readme-renderer
 bleach==3.1.0             # via readme-renderer
 boto3==1.9.216
 boto==2.49.0              # via cloudaux
@@ -15,7 +15,6 @@ click==7.0                # via pip-tools
 cloudaux==1.6.4
 defusedxml==0.6.0         # via cloudaux
 docopt==0.6.2
-docutils==0.15.2          # via botocore, readme-renderer
 flagpole==1.1.1           # via cloudaux
 idna==2.8                 # via requests
 import-string==0.1.0
