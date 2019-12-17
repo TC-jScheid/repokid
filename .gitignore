@@ -1,7 +1,6 @@
 .idea/
 venv/
 *.pyc
-*.json
 *.log
 *.csv
 build
@@ -14,4 +13,3 @@ dist
 .newt.yml
 tox.ini
 test-reports/*
-config.json
