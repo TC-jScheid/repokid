@@ -1,6 +1,7 @@
 boto3
 cloudaux
 docopt
+docutils==0.15.2
 import_string
 logmatic-python
 marshmallow<3
