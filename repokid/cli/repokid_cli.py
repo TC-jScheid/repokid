@@ -217,7 +217,7 @@ def _get_aardvark_data(aardvark_api_location, account_number=None, arn=None):
         print('Loop num {}'.format(i))
         params = {"count": PAGE_SIZE, "page": page_num}
         try:
-            print('Sending post request')
+            print('Sending post request to {}'.format(aardvark_api_location))
             r_aardvark = requests.post(
                 aardvark_api_location, params=params, json=payload
             )
