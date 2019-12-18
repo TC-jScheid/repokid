@@ -220,6 +220,7 @@ def _get_aardvark_data(aardvark_api_location, account_number=None, arn=None):
             r_aardvark = requests.post(
                 aardvark_api_location, params=params, json=payload
             )
+            print('Got reply {} from aardvark'.format(r_aardvark))
         except requests.exceptions.RequestException as e:
             LOGGER.error("Unable to get Aardvark data: {}".format(e))
             sys.exit(1)
