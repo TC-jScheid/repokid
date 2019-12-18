@@ -1,5 +1,5 @@
 {
-    "aardvark_api_location": "http://localhost:5000/api/1/advisors",
+    "aardvark_api_location": "http://10.90.2.103:5000/api/1/advisors",
     "active_filters": [
         "repokid.filters.age:AgeFilter",
         "repokid.filters.lambda:LambdaFilter",
